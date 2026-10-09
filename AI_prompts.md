@@ -118,3 +118,21 @@ This file records the prompts I gave to the AI assistant while working on HW 5 (
 **Why I needed the follow-up:** My first draft only had answers for the first three questions and one idea for the "could solve" list, so I asked for help checking my answers and filling in the last two before I sent the final prompt above.
 
 ---
+
+## Problem 11: Submit to GitHub
+
+**Prompt:**
+> Get HW5 ready to submit and push it to a new public GitHub repo called `campus-customs-hw5` on my account. Match the file layout from the assignment:
+> - Write a README.md at the root that explains how to copy the original database to the working copy for a clean run, start the MCP server, start the FastAPI backend, start the React board, and reset the database before a full three-ticket run.
+> - Retake the screenshots in output/resolved_board.html so they show the new dashboard design.
+> - Include both database files in data/ (the original and the working copy), but do not push my real .env. Also leave out data.zip, .venv, and node_modules.
+> - Before pushing, show me the list of files that will be committed so I can check it, and make sure no API key is anywhere in them.
+> - After it's pushed, save the repo URL in output/github_url.txt and push that too.
+
+**Follow-up prompt:**
+> Push it.
+
+**Why I needed the follow-up:** I had asked to review the file list and the secret check before anything went public, so the push waited for my OK.
+
+---
+
