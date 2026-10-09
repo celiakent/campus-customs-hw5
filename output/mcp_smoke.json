@@ -1,0 +1,20 @@
+[
+  {
+    "prompt": "How many Classic Bulldog Tees in size S do we have?",
+    "tool": "check_stock",
+    "arguments": {"sku": "CC-TEE-WHITE", "size": "S"},
+    "output": {"found": true, "items": [{"sku": "CC-TEE-WHITE", "name": "Classic Bulldog Tee", "size": "S", "qty": 0, "location": "Aisle B"}]}
+  },
+  {
+    "prompt": "How much is rent on lease 1 and when is it due?",
+    "tool": "get_lease",
+    "arguments": {"lease_id": 1},
+    "output": {"found": true, "lease": {"id": 1, "space_name": "Chapel Street shop", "landlord": "Elm City Properties", "monthly_rent": 2400, "next_due": "2026-09-02", "notes": null}, "date_today": "2026-08-31", "days_until_due": 2, "overdue": false}
+  },
+  {
+    "prompt": "What's the cost, list price, and margin on CC-HOOD-NAVY?",
+    "tool": "get_pricing",
+    "arguments": {"sku": "CC-HOOD-NAVY"},
+    "output": {"found": true, "pricing": {"sku": "CC-HOOD-NAVY", "unit_cost": 22, "list_price": 58}, "margin_per_unit": 36, "margin_pct_of_list": 62.1}
+  }
+]

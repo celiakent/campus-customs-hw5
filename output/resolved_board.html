@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campus Customs: Resolved Board</title>
+<style>
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f4efe4; color: #1d2433; }
+  header { background: #00356b; color: #fff; padding: 22px 32px; }
+  header h1 { margin: 0; font-family: Georgia, serif; }
+  header p { margin: 4px 0 0; opacity: .8; }
+  nav { display: flex; gap: 6px; padding: 14px 32px 0; flex-wrap: wrap; }
+  nav a { text-decoration: none; background: #fff; color: #00356b; border: 1px solid #e2d9c6; padding: 8px 14px; border-radius: 999px; font-weight: 600; font-size: .9rem; }
+  main { max-width: 1240px; margin: 0 auto; padding: 20px 32px 60px; }
+  .summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 28px; }
+  .stat { background: #fffdf8; border: 1px solid #e2d9c6; border-radius: 12px; padding: 14px 18px; }
+  .stat b { display: block; font-family: Georgia, serif; font-size: 1.6rem; color: #00356b; }
+  section { margin-bottom: 40px; }
+  section h2 { font-family: Georgia, serif; color: #00356b; margin: 0 0 4px; }
+  .caption { color: #6c6658; margin: 0 0 12px; }
+  figure { margin: 0; background: #fff; border: 1px solid #e2d9c6; border-radius: 12px; padding: 10px; box-shadow: 0 6px 18px rgba(60,45,20,.08); }
+  figure img { width: 100%; display: block; border-radius: 6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Resolved Board: Tickets 101, 102, 103</h1>
+  <p>Screenshots of the React Operations Desk after the full run on 2026-10-09 (shop date 2026-08-31). All agents on gpt-6-luna.</p>
+</header>
+<nav><a href="#t101">#101 Bulldog tee</a><a href="#t102">#102 Rent due</a><a href="#t103">#103 Bulk hoodie discount</a></nav>
+<main>
+  <div class="summary">
+    <div class="stat">Starting checking<b>$3,400.00</b></div>
+    <div class="stat">Paid with human approval<b>−$3,240.00</b>invoice 501 $840 + rent $2,400</div>
+    <div class="stat">Ending checking<b>$160.00</b>matches cash_accounts</div>
+  </div>
+  <section id="t101">
+    <h2>#101 · Bulldog tee: resolved</h2>
+    <p class="caption">Inventory found 0 in size S and the vendor on hold. Accounting prepared the $840 invoice 501 payment, which I signed (checking $3,400 → $2,560). The $8 tee PO was refused while the invoice was unpaid. Draft #1 to Tauhid is on the board.</p>
+    <figure><img src="screenshots/ticket_101.png" alt="React board showing ticket 101 resolved"></figure>
+  </section>
+  <section id="t102">
+    <h2>#102 · Rent due: resolved</h2>
+    <p class="caption">Facilities verified lease 1 and handed off to Accounting, which prepared $2,400 rent; I signed it (checking $2,560 → $160). The screenshot shows the re-run (Run 5 on the picker) after the token-cap fix: the agents flagged the moved lease date and refused a duplicate payment.</p>
+    <figure><img src="screenshots/ticket_102.png" alt="React board showing ticket 102 resolved"></figure>
+  </section>
+  <section id="t103">
+    <h2>#103 · Bulk hoodie discount: resolved</h2>
+    <p class="caption">8 of 20 in stock. Offer: the 8 at 10% off ($52.20 each). No restock ordered, because $264 is more than the $160 left. Draft #2 to the Yale AI Club is on the board, and no money moved.</p>
+    <figure><img src="screenshots/ticket_103.png" alt="React board showing ticket 103 resolved"></figure>
+  </section>
+</main>
+</body>
+</html>

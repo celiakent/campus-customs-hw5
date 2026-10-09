@@ -1,0 +1,26 @@
+# Secrets (keep the template)
+.env
+.env.*
+!.env.example
+
+# Raw download (the databases are committed under data/)
+data.zip
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node / Vite
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Audit-trail temp file
+output/audit_trail.tmp
+
+# OS / editor
+.DS_Store
